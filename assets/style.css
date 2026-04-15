@@ -91,7 +91,7 @@ a {
 
 .hero h1 {
   margin: 0;
-  max-width: 780px;
+  max-width: 100%;
   font-size: clamp(2.8rem, 5vw, 5rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -184,7 +184,7 @@ a {
 }
 
 .content {
-  padding: 8px 24px 72px;
+  padding: 8px 0 72px;
 }
 
 .panel {
@@ -221,6 +221,11 @@ a {
 
 .panel__grid--compact {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.panel__grid--links {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .panel__stack {
@@ -303,28 +308,16 @@ a {
   padding: 28px;
 }
 
-.link-card__url {
-  margin: 14px 0;
-  padding: 14px 16px;
-  border-radius: var(--radius-md);
-  background: rgba(92, 107, 79, 0.08);
-  color: var(--ink);
-  font-family: "Trebuchet MS", "PingFang SC", sans-serif;
+.link-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.link-card__actions .button {
+  padding: 10px 18px;
   font-size: 14px;
-  line-height: 1.7;
-  word-break: break-all;
-}
-
-.text-link {
-  display: inline-block;
-  margin-top: 12px;
-  color: var(--accent-deep);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(124, 51, 43, 0.24);
-}
-
-.text-link:hover {
-  border-bottom-color: var(--accent-deep);
 }
 
 .faq-list {
