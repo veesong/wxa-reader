@@ -6,7 +6,7 @@
 
 ## 项目入口
 
-- Android APP 下载（v1.1）：<https://github.com/veesong/wxa-reader/releases/download/1.1/wxa-reader-1.1.apk>
+- Android APP 下载（v1.2）：<https://github.com/veesong/wxa-reader/releases/download/1.2/wxa-reader-1.2.apk>
 - RSS 订阅地址：<http://wxa-reader.x6o4.com/feed.xml>
 - 历史归档站：<https://wxa-blog.x6o4.com/>
 
