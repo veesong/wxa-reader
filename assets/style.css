@@ -128,6 +128,48 @@ a {
   transform: translateY(-1px);
 }
 
+.button-qrcode-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-qrcode {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 14px);
+  width: 170px;
+  padding: 8px;
+  border-radius: 16px;
+  background: rgba(255, 252, 246, 0.96);
+  border: 1px solid rgba(31, 41, 51, 0.12);
+  box-shadow: 0 16px 30px rgba(31, 41, 51, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 8px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+  z-index: 4;
+  /* 关键约束：二维码只做展示，不能拦截按钮点击。 */
+  pointer-events: none;
+}
+
+.button-qrcode img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 关键约束：仅在支持悬浮的设备展示二维码，移动端点击按钮时直接下载。 */
+@media (hover: hover) and (pointer: fine) {
+  .button-qrcode-wrap:hover .button-qrcode,
+  .button-qrcode-wrap:focus-within .button-qrcode {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+}
+
 .button--primary {
   color: #fff;
   background: linear-gradient(135deg, var(--accent) 0%, #b55b4e 100%);
@@ -402,5 +444,9 @@ a {
   .button {
     width: 100%;
     text-align: center;
+  }
+
+  .button-qrcode-wrap {
+    width: 100%;
   }
 }
