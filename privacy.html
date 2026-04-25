@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="wxa-reader Android 应用隐私政策，说明当前版本的数据处理方式、本地存储范围与网络访问。">
+  <meta name="theme-color" content="#ffffff">
+  <title>隐私政策 | 公众号阅读</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --line: #d8dee4;
+      --soft: #f6f8fa;
+      --link: #0969da;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .document {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    .document-header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .document-header h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.2;
+    }
+
+    .document-header p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .document-meta {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .document-nav {
+      margin-top: 20px;
+      padding: 14px 16px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .document-nav strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .document-nav ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .document-section {
+      margin-top: 34px;
+    }
+
+    .document-section h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.35;
+    }
+
+    .document-section h3 {
+      margin: 22px 0 10px;
+      font-size: 18px;
+      line-height: 1.45;
+    }
+
+    .document-section p {
+      margin: 0 0 12px;
+    }
+
+    .document-section ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    .document-section li {
+      margin-bottom: 8px;
+    }
+
+    .callout {
+      margin-top: 18px;
+      padding: 16px 18px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 640px) {
+      .document {
+        padding-top: 28px;
+        padding-bottom: 56px;
+      }
+
+      .document-header h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="document">
+    <header class="document-header">
+      <h1>隐私政策</h1>
+      <p>本政策适用于 Android 应用“公众号阅读 / wxa-reader”，说明当前版本的数据处理方式、本地存储范围与网络访问情况。</p>
+      <div class="document-meta">
+        生效日期：2026-04-24<br>
+        最后更新：2026-04-24
+      </div>
+      <nav class="document-nav" aria-label="目录">
+        <strong>目录</strong>
+        <ol>
+          <li><a href="#scope">适用范围与当前版本说明</a></li>
+          <li><a href="#local-data">本地存储的数据</a></li>
+          <li><a href="#network">网络访问与第三方服务</a></li>
+          <li><a href="#permissions">权限、共享与保留</a></li>
+          <li><a href="#children">儿童隐私</a></li>
+          <li><a href="#updates">政策更新与联系</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <section class="document-section" id="scope">
+      <h2>1. 适用范围与当前版本说明</h2>
+      <p>本政策描述的是当前已发布版本的实际行为，而不是未来可能上线的功能计划。</p>
+      <p>当前版本没有接入广告 SDK、统计分析 SDK、崩溃上报 SDK，也没有账号注册、登录、云同步或消息推送能力。</p>
+      <p>当前版本也不会要求你提交姓名、手机号、身份证号等实名信息。</p>
+      <div class="callout">
+        <p>如果后续版本新增广告、用户登录、云同步或其他会影响数据处理方式的能力，我会在对应版本发布前先更新本隐私政策，并按实际上线的功能重新说明数据收集、使用和共享情况。</p>
+      </div>
+    </section>
+
+    <section class="document-section" id="local-data">
+      <h2>2. 本地存储的数据</h2>
+      <h3>2.1 阅读历史</h3>
+      <ul>
+        <li>本地保存文章链接、文章标题、阅读时间，以及用于移除页面广告块的清理规则。</li>
+        <li>用途是标记已读状态，并在“历史”页面展示最近读过的文章。</li>
+        <li>数据只保存在设备本地，最多保留最近 200 条。</li>
+      </ul>
+
+      <h3>2.2 收藏记录</h3>
+      <ul>
+        <li>本地保存文章链接、文章标题、收藏时间，以及用于移除页面广告块的清理规则。</li>
+        <li>用途是支持“收藏 / 取消收藏”和收藏列表展示。</li>
+        <li>数据只保存在设备本地，直到你主动取消收藏、清除应用数据或卸载应用。</li>
+      </ul>
+
+      <h3>2.3 阅读偏好</h3>
+      <ul>
+        <li>当前会保存字号大小等界面偏好设置。</li>
+        <li>用途是让应用在下次打开时保持你的阅读习惯。</li>
+        <li>这些偏好仅保存在设备本地，不用于跨应用跟踪。</li>
+      </ul>
+
+      <h3>2.4 更新提醒状态</h3>
+      <ul>
+        <li>本地保存最近检查更新时间、最近一次检查是否失败、最近提示过的版本号。</li>
+        <li>用途是避免重复弹出同一版本提示，并在网络失败后按较短间隔重试。</li>
+        <li>这些信息仅用于版本提醒控制，不包含你的真实身份信息。</li>
+      </ul>
+    </section>
+
+    <section class="document-section" id="network">
+      <h2>3. 网络访问与第三方服务</h2>
+      <h3>3.1 项目内容分发服务</h3>
+      <ul>
+        <li>应用会从项目内容分发地址拉取文章列表，用于展示最近可读内容。</li>
+        <li>列表数据在传输前已做加密封装，应用在本地解密后展示。</li>
+        <li>与常见网络服务一样，这类请求可能在服务端产生常规访问日志，例如 IP 地址、请求时间和 User-Agent。</li>
+      </ul>
+
+      <h3>3.2 文章原始来源</h3>
+      <ul>
+        <li>当你打开某篇文章时，应用会直接请求该文章的原始链接，常见来源包括微信公众号页面。</li>
+        <li>请求目的是抓取正文并在本地做清理显示，而不是把你的阅读历史上传给开发者做画像。</li>
+        <li>原始内容站点会按照其自身的隐私政策处理访问日志和相关数据。</li>
+      </ul>
+
+      <h3>3.3 GitHub Releases</h3>
+      <ul>
+        <li>应用会访问 GitHub 的 latest releases 接口，用于判断是否有新版本可下载。</li>
+        <li>该过程不会要求你登录 GitHub，也不会读取你的 GitHub 账号资料。</li>
+        <li>访问 GitHub API 时，同样可能产生 GitHub 侧的常规访问日志。</li>
+      </ul>
+
+      <h3>3.4 当前不会进行的网络处理</h3>
+      <ul>
+        <li>当前版本不会把阅读历史、收藏记录或字号偏好同步到开发者后台。</li>
+        <li>当前版本不会将设备通讯录、照片、定位、麦克风或摄像头信息上传到服务器。</li>
+        <li>当前版本不会将你的数据出售、出租，也不会用于广告定向。</li>
+      </ul>
+    </section>
+
+    <section class="document-section" id="permissions">
+      <h2>4. 权限、共享与保留</h2>
+      <h3>4.1 应用权限</h3>
+      <p>当前应用仅申请网络权限，用于获取文章列表、读取文章原文和检查新版本。</p>
+
+      <h3>4.2 数据共享</h3>
+      <p>数据只会在你主动触发的网络请求中发送到内容源站点、GitHub 或项目内容分发服务。当前版本不会额外共享给广告平台、统计平台或第三方登录平台。</p>
+
+      <h3>4.3 数据保留与删除</h3>
+      <p>你可以通过清除应用数据或卸载应用，删除本地保存的历史、收藏、阅读偏好和更新提醒状态。</p>
+    </section>
+
+    <section class="document-section" id="children">
+      <h2>5. 儿童隐私</h2>
+      <p>本应用面向普通内容阅读场景，不以 13 岁以下儿童为目标用户，也不会主动要求儿童提供身份信息。</p>
+      <p>如果监护人认为儿童向本应用提供了不应收集的信息，可通过本页提供的联系方式联系开发者处理。</p>
+    </section>
+
+    <section class="document-section" id="updates">
+      <h2>6. 政策更新与联系</h2>
+      <p>如果后续版本新增广告、用户登录、云同步、消息推送、统计分析等能力，本页会先更新对应说明，再随版本一起发布。</p>
+      <p>如对本政策有疑问，或希望反馈数据相关问题，可通过 <a href="https://github.com/veesong/wxa-reader/issues" target="_blank" rel="noopener">GitHub Issues</a> 联系开发者。</p>
+    </section>
+  </main>
+</body>
+</html>
