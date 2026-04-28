@@ -6,9 +6,10 @@
 
 ## 项目入口
 
-- Android APP 下载（最新）：<https://github.com/veesong/wxa-reader/releases/latest/download/wxa-reader-latest.apk>
-- RSS 订阅地址：<http://wxa-reader.x6o4.com/feed.xml>
-- 历史归档站：<https://wxa-blog.x6o4.com/>
+- [Google Play 下载](https://play.google.com/store/apps/details?id=com.x6o4.wxareader&hl=zh)
+- [Android APP 下载（APK 最新）](https://github.com/veesong/wxa-reader/releases/latest/download/wxa-reader-latest.apk)
+- [RSS 订阅地址](http://wxa-reader.x6o4.com/feed.xml)
+- [历史归档站](https://wxa-blog.x6o4.com/)
 
 项目 slogan：像刷抖音一样刷公众号。
 
