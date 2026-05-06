@@ -3,73 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="像刷抖音一样刷公众号：一个围绕个人阅读习惯构建的公众号阅读项目，提供 Android APP、RSS 阅读流与历史归档。">
-  <meta name="theme-color" content="#f2efe8">
+  <meta name="description" content="像刷抖音一样刷公众号：一个围绕个人阅读习惯构建的公众号阅读项目，提供 Android APP 与 RSS 阅读流。">
+  <meta name="theme-color" content="#0f172a">
   <title>公众号阅读</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="page-shell">
+  <div class="shell">
     <header class="hero">
-      <div class="hero__backdrop hero__backdrop--left"></div>
-      <div class="hero__backdrop hero__backdrop--right"></div>
-      <div class="hero__inner">
-        <p class="eyebrow">Personal WeChat Reading Feed</p>
-        <h1>像刷抖音一样刷公众号<br>把阅读节奏交还给你</h1>
-        <p class="hero__lead">
-          这是一个围绕我个人日常阅读习惯搭建的公众号阅读项目。它不会全量搬运公众号更新，而是把最近读过、整理过、愿意保留下来的内容，做成更轻量、更连贯的阅读流。
-        </p>
-        <div class="hero__actions">
-          <a class="button button--primary" href="https://play.google.com/store/apps/details?id=com.x6o4.wxareader&amp;hl=zh" target="_blank" rel="noopener">Google Play 下载</a>
-          <div class="button-qrcode-wrap">
-            <a class="button button--ghost" href="https://github.com/veesong/wxa-reader/releases/latest/download/wxa-reader-latest.apk" target="_blank" rel="noopener">下载 APK</a>
-            <span class="button-qrcode" role="img" aria-label="Android APP 下载二维码">
-              <img src="assets/qrcode.png" alt="Android APP 下载二维码">
-            </span>
-          </div>
-          <a class="button button--ghost" href="http://wxa-reader.x6o4.com/feed.xml" target="_blank" rel="noopener">订阅 RSS</a>
-          <button class="button button--ghost" type="button" data-copy-feed data-copy-text="http://wxa-reader.x6o4.com/feed.xml">复制订阅地址</button>
-          <a class="button button--plain" href="https://wxa-blog.x6o4.com/" target="_blank" rel="noopener">查看历史归档</a>
+      <p class="eyebrow">Personal WeChat Reading Feed</p>
+      <h1>像刷抖音一样刷公众号<br>把阅读节奏交还给你</h1>
+      <p class="hero__lead">
+        这是一个围绕我个人日常阅读习惯搭建的公众号阅读项目。它不会全量搬运公众号更新，而是把最近读过、整理过、愿意保留下来的内容，做成更轻量、更连贯的阅读流。
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="https://play.google.com/store/apps/details?id=com.x6o4.wxareader&amp;hl=zh" target="_blank" rel="noopener">Google Play 下载</a>
+        <div class="button-qrcode-wrap">
+          <a class="button button--ghost" href="https://github.com/veesong/wxa-reader/releases/latest/download/wxa-reader-latest.apk" target="_blank" rel="noopener">下载 APK</a>
+          <span class="button-qrcode" role="img" aria-label="Android APP 下载二维码">
+            <img src="assets/qrcode.png" alt="Android APP 下载二维码">
+          </span>
         </div>
-        <dl class="hero__stats" aria-label="项目概览">
-          <div>
-            <dt>最近输出</dt>
-            <dd>10 篇</dd>
-          </div>
-          <div>
-            <dt>内容来源</dt>
-            <dd>个人阅读筛选</dd>
-          </div>
-          <div>
-            <dt>阅读形态</dt>
-            <dd>APP + RSS + 归档站</dd>
-          </div>
-        </dl>
+        <a class="button button--ghost" href="http://wxa-reader.x6o4.com/feed.xml" target="_blank" rel="noopener">订阅 RSS</a>
+        <button class="button button--outline" type="button" data-copy-feed data-copy-text="http://wxa-reader.x6o4.com/feed.xml">复制订阅地址</button>
       </div>
+      <dl class="stats" aria-label="项目概览">
+        <div><dt>最近输出</dt><dd>10 篇</dd></div>
+        <div><dt>内容来源</dt><dd>个人阅读筛选</dd></div>
+        <div><dt>阅读形态</dt><dd>APP + RSS</dd></div>
+      </dl>
     </header>
 
     <main class="content">
-      <section class="panel panel--intro">
-        <div class="panel__grid">
-          <div>
-            <p class="section-label">关于这个项目</p>
-            <h2>这不是全量聚合器，而是一条个人整理后的阅读流</h2>
-          </div>
-          <div>
-            <p>
-              平时看到值得保存或值得反复阅读的公众号文章，我会把它们收进这个系统里。项目会经过抓取、内容整理、质量筛选和人工审核，最后再以 RSS 输出。
-            </p>
-            <p>
-              如果你更在意“是否值得读”，而不是“有没有全量同步”，这条订阅流会更接近它原本的设计目标。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel panel--contrast">
+      <!-- 对比 -->
+      <section class="section">
         <p class="section-label">它和常见 RSS 的区别</p>
         <div class="compare">
-          <article class="compare-card compare-card--muted">
+          <article class="card card--muted">
             <h3>常见公众号 RSS</h3>
             <ul>
               <li>更偏向全量抓取</li>
@@ -77,7 +47,7 @@
               <li>信息很多，但阅读噪音也更高</li>
             </ul>
           </article>
-          <article class="compare-card compare-card--highlight">
+          <article class="card card--highlight">
             <h3>这个项目</h3>
             <ul>
               <li>只保留最近 10 篇已整理文章</li>
@@ -88,106 +58,68 @@
         </div>
       </section>
 
-      <section class="panel panel--reason">
-        <div class="panel__stack">
-          <div>
-            <p class="section-label">为什么要做</p>
-            <h2>很多公众号并不缺更新，缺的是更安静的阅读体验</h2>
-          </div>
-          <div class="reason-grid">
-            <article>
-              <h3>高频更新，不等于高密度价值</h3>
-              <p>很多号一天会推很多内容，但真正值得认真读的，往往只有一两篇。</p>
-            </article>
-            <article>
-              <h3>广告会打断阅读节奏</h3>
-              <p>软广、硬广、推广段落夹在正文里，会让阅读体验明显变差。</p>
-            </article>
-            <article>
-              <h3>我想保留“读完还想留着”的文章</h3>
-              <p>这个项目更像一个个人阅读过滤器，把愿意继续回看的内容留下来。</p>
-            </article>
-          </div>
+      <!-- 原因 -->
+      <section class="section">
+        <p class="section-label">为什么要做</p>
+        <h2>很多公众号并不缺更新，缺的是更安静的阅读体验</h2>
+        <div class="reason-grid">
+          <article class="card">
+            <h3>高频更新，不等于高密度价值</h3>
+            <p>很多号一天会推很多内容，但真正值得认真读的，往往只有一两篇。</p>
+          </article>
+          <article class="card">
+            <h3>广告会打断阅读节奏</h3>
+            <p>软广、硬广、推广段落夹在正文里，会让阅读体验明显变差。</p>
+          </article>
+          <article class="card">
+            <h3>我想保留"读完还想留着"的文章</h3>
+            <p>这个项目更像一个个人阅读过滤器，把愿意继续回看的内容留下来。</p>
+          </article>
         </div>
       </section>
 
-      <section class="panel panel--process">
+      <!-- 处理流程 -->
+      <section class="section">
         <p class="section-label">处理方式</p>
         <h2>AI 参与整理，人工参与把关</h2>
         <div class="steps">
-          <article class="step">
-            <span>01</span>
+          <article class="card">
+            <span class="step-num">01</span>
             <h3>收集文章</h3>
             <p>把平时读到的公众号文章提交进系统，进入后续处理流程。</p>
           </article>
-          <article class="step">
-            <span>02</span>
+          <article class="card">
+            <span class="step-num">02</span>
             <h3>内容分析</h3>
             <p>使用 AI 辅助完成内容分析、质量筛选和 Markdown 整理。</p>
           </article>
-          <article class="step">
-            <span>03</span>
+          <article class="card">
+            <span class="step-num">03</span>
             <h3>审核与清理</h3>
             <p>结合人工审核，尽量减少广告和无关内容对阅读的打扰。</p>
           </article>
-          <article class="step">
-            <span>04</span>
+          <article class="card">
+            <span class="step-num">04</span>
             <h3>输出分发</h3>
-            <p>最近阅读流走 RSS，历史内容走归档站，分别承担“追更”和“回看”两种场景。</p>
+            <p>整理后的内容通过 RSS 输出，适合日常追更和轻量订阅。</p>
           </article>
         </div>
       </section>
 
-      <section class="panel panel--links">
-        <div class="panel__grid panel__grid--links">
-          <article class="link-card">
-            <p class="section-label">Android APP</p>
-            <h2>像刷抖音一样刷公众号</h2>
-            <p>适合希望直接在手机上连刷阅读流的人。打开即看，减少切换成本，把公众号阅读变成更顺手的日常动作。</p>
-            <div class="link-card__actions">
-              <a class="button button--primary" href="https://play.google.com/store/apps/details?id=com.x6o4.wxareader&amp;hl=zh" target="_blank" rel="noopener">Google Play 下载</a>
-              <div class="button-qrcode-wrap">
-                <a class="button button--ghost" href="https://github.com/veesong/wxa-reader/releases/latest/download/wxa-reader-latest.apk" target="_blank" rel="noopener">下载 APK</a>
-                <span class="button-qrcode" role="img" aria-label="Android APP 下载二维码">
-                  <img src="assets/qrcode.png" alt="Android APP 下载二维码">
-                </span>
-              </div>
-            </div>
-          </article>
-          <article class="link-card">
-            <p class="section-label">RSS 订阅</p>
-            <h2>适合放进你的阅读器</h2>
-            <p>只输出最近 10 篇，适合做一个更新克制、节奏稳定的订阅入口。</p>
-            <div class="link-card__actions">
-              <a class="button button--ghost" href="http://wxa-reader.x6o4.com/feed.xml" target="_blank" rel="noopener">订阅 RSS</a>
-            </div>
-          </article>
-          <article class="link-card">
-            <p class="section-label">历史归档</p>
-            <h2>适合先看阅读口味再决定是否订阅</h2>
-            <p>如果你想先看看我长期都在读什么，归档站会比 RSS 更完整。</p>
-            <div class="link-card__actions">
-              <a class="button button--plain" href="https://wxa-blog.x6o4.com/" target="_blank" rel="noopener">打开归档站</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel panel--faq">
-        <p class="section-label">使用说明</p>
-        <div class="faq-list">
-          <article>
-            <h3>适合谁订阅？</h3>
-            <p>适合希望看到个人筛选后的公众号阅读流、并且不想被全量更新和广告频繁打断的人。</p>
-          </article>
-          <article>
-            <h3>为什么 RSS 只放最近 10 篇？</h3>
-            <p>RSS 更适合承担“最近在读什么”的角色，保持轻量，避免变成冗长的历史仓库。</p>
-          </article>
-          <article>
-            <h3>如果无法打开归档站？</h3>
-            <p>归档站目前对大陆地区访问做了限制。如果你无法访问，通常需要使用可访问外网的网络环境。</p>
-          </article>
+      <!-- 底部 CTA -->
+      <section class="section section--cta">
+        <h2>开始你的安静阅读</h2>
+        <p>下载 Android APP，或在你的 RSS 阅读器中订阅</p>
+        <div class="cta-actions">
+          <a class="button button--primary" href="https://play.google.com/store/apps/details?id=com.x6o4.wxareader&amp;hl=zh" target="_blank" rel="noopener">Google Play 下载</a>
+          <div class="button-qrcode-wrap">
+            <a class="button button--ghost" href="https://github.com/veesong/wxa-reader/releases/latest/download/wxa-reader-latest.apk" target="_blank" rel="noopener">下载 APK</a>
+            <span class="button-qrcode" role="img" aria-label="Android APP 下载二维码">
+              <img src="assets/qrcode.png" alt="Android APP 下载二维码">
+            </span>
+          </div>
+          <a class="button button--ghost" href="http://wxa-reader.x6o4.com/feed.xml" target="_blank" rel="noopener">订阅 RSS</a>
+          <button class="button button--outline" type="button" data-copy-feed data-copy-text="http://wxa-reader.x6o4.com/feed.xml">复制订阅地址</button>
         </div>
       </section>
     </main>
